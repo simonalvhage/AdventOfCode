@@ -11,7 +11,7 @@ def createfolder(today):
         f.close()
 
 def download_input(today):
-    uri = 'https://adventofcode.com/2023/day/'+ str(today) + '/input'
+    uri = 'https://adventofcode.com/2022/day/'+ str(today) + '/input'
     response = requests.get(uri, cookies={
         'session': "53616c7465645f5fe233abb71092fb5980da9509390027d557c95f28612dfca79dd54ea801bd035daab1b825dbe0c3d702afa3c05528b7eb071c6f10182e6314"})
     if not os.path.exists("day" + str(today) + "/input.txt"):
