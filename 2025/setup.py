@@ -10,7 +10,7 @@ def get_session_cookie() -> str:
     """Get session cookie from environment variable or return default."""
     return os.environ.get(
         "AOC_SESSION",
-        "53616c7465645f5fe233abb71092fb5980da9509390027d557c95f28612dfca79dd54ea801bd035daab1b825dbe0c3d702afa3c05528b7eb071c6f10182e6314"
+        "53616c7465645f5f6140c49df1992c8bb2eabe46881814a443aca758a4e0dbaee8b3e453b590a6f6a2984648fbb25f60e9d65c6c3d9f9ce45702d61e40999019"
     )
 
 
