@@ -27,24 +27,7 @@ def create_folder(day: int, year: int = 2025) -> Path:
             shutil.copy(template_path, main_path)
             print(f"✓ Created {main_path} from template")
         else:
-            print(f"✗ Warning: template.py not found at {template_path}")
-            main_path.write_text("""from pathlib import Path
-
-def read_input(file_path: str = "input.txt") -> list[str]:
-	return Path(file_path).read_text().strip().splitlines()
-
-def part1(data):
-	return None
-
-def part2(data):
-	return None
-
-if __name__ == "__main__":
-	data = read_input("input.txt")
-	print(f"Part 1: {part1(data)}")
-	print(f"Part 2: {part2(data)}")
-""")
-            print(f"✓ Created {main_path} with basic template")
+            print(f"✗ Error: template.py not found at {template_path}")
 
     return day_path
 
